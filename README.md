@@ -66,3 +66,20 @@ Accessibility was another focus. Turning day cells into real buttons (with `aria
 
 If I iterate further, I’d add export/import JSON, drag-to-reorder habits, and a light/dark theme toggle. Overall, this was a concise but realistic exercise in DOM work, date handling, and shipping a small, accessible app.
 
+## Demo Video (3–5 minutes)
+
+**Link:** https://video.laurea.fi/media/2025-11-12%2017-35-36/0_12l4i3uh
+
+**Timestamps**
+- 00:00–00:30 — Intro  
+  Name, course, project title (“Habit Tracker”), one-line problem statement.
+- 00:30–02:03 — Overview + live demo 
+  Files (`index.html`, `styles.css`, `app.js`), Vanilla JS + `localStorage`, main features. 
+  1) Add habit “Going to the gym”  
+  2) Click **Today** → shows “Yes”, streak increments  
+  3) Toggle earlier days to simulate a streak  
+  4) Refresh page → data persists (optional: show Application → Local Storage)  
+  5) Delete habit → confirm dialog
+- 02:03–03:42 — Challenge & solution  
+  Streak logic + midnight rollover; ISO date helper; rolling 7-day window.
+
