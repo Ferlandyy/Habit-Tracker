@@ -34,11 +34,12 @@ Add habits, tick your day, and keep your streaks going. Built with **Vanilla JS 
 
 
 ## Getting Started (Run Locally)
+
+### Windows
 - You can do so by simply running index.html file from the folder
 
-or
+### MacOS
 
-by running cmd and typing the following commands:
 ```bash
 git clone https://github.com/Ferlandyy/habit-tracker.git
 cd habit-tracker
