@@ -22,7 +22,7 @@ Add habits, tick your day, and keep your streaks going. Built with **Vanilla JS 
 ## Tech Stack
 - HTML, CSS, **Vanilla JavaScript**
 - **localStorage** (JSON stringify/parse)
-- Optional: GitHub Pages for hosting
+- Render for hosting
 
 ---
 
