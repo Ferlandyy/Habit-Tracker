@@ -52,7 +52,7 @@ start index.html
 |---|---|
 | MVP works (add / toggle / persist) | Add a habit; toggle Today and previous days; refresh to confirm persistence via `localStorage`. |
 | UX & accessibility | Labels for inputs; all cells are buttons; visible focus rings; keyboard operable (Tab/Enter/Space); responsive table with horizontal scroll on small screens; sufficient color contrast. |
-| Public deployment | Live site published on GitHub Pages at: https://ferlandyy.github.io/habit-tracker/ |
+| Public deployment | Live site published on Render at: https://habit-tracker-3y2b.onrender.com  |
 | Code quality | Clear separation of concerns across HTML/CSS/JS; helper functions for dates; no framework; concise naming; no dead code. |
 | Reflection (200–300 words) | Included below in “Reflection”. |
 
@@ -73,13 +73,13 @@ If I iterate further, I’d add export/import JSON, drag-to-reorder habits, and 
 **Timestamps**
 - 00:00–00:30 — Intro  
   Name, course, project title (“Habit Tracker”), one-line problem statement.
-- 00:30–02:03 — Overview + live demo 
-  Files (`index.html`, `styles.css`, `app.js`), Vanilla JS + `localStorage`, main features. 
+- 00:30–02:03 — live demo 
   1) Add habit “Going to the gym”  
   2) Click **Today** → shows “Yes”, streak increments  
   3) Toggle earlier days to simulate a streak  
   4) Refresh page → data persists (optional: show Application → Local Storage)  
   5) Delete habit → confirm dialog
-- 02:03–03:42 — Challenge & solution  
+- 02:03–03:42 — Challenge & solution + overview 
   Streak logic + midnight rollover; ISO date helper; rolling 7-day window.
+  Files (`index.html`, `styles.css`, `app.js`), Vanilla JS + `localStorage`, main features. 
 
