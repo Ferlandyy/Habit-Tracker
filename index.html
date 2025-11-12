@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Habit Tracker</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="container">
+      <h1>Habit Tracker</h1>
+      <p class="tagline">Add habits, tick your day, and keep your streaks going.</p>
+    </header>
+
+    <main class="container">
+      <form id="add-form" aria-label="Add a new habit">
+        <label for="habit-name">Habit name</label>
+        <input
+          id="habit-name"
+          name="habit-name"
+          type="text"
+          required
+          minlength="2"
+          placeholder="e.g., Drink water"
+        />
+        <button id="add-btn" type="submit">Add habit</button>
+      </form>
+
+      <div class="table-wrapper" role="region" aria-label="Habits table">
+        <table id="habits-table">
+          <thead>
+            <tr>
+              <th scope="col">Habit</th>
+              <th scope="col" id="d6">D-6</th>
+              <th scope="col" id="d5">D-5</th>
+              <th scope="col" id="d4">D-4</th>
+              <th scope="col" id="d3">D-3</th>
+              <th scope="col" id="d2">D-2</th>
+              <th scope="col" id="d1">Yesterday</th>
+              <th scope="col" id="d0">Today</th>
+              <th scope="col">Streak</th>
+              <th scope="col">Actions</th>
+            </tr>
+          </thead>
+          <tbody id="habits-tbody"></tbody>
+        </table>
+      </div>
+    </main>
+
+    <footer class="container small">
+      <p>
+        Keyboard tips: Tab to move, Enter/Space to activate buttons.
+        Each day cell is a button for accessibility.
+      </p>
+    </footer>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
