@@ -58,8 +58,6 @@ start index.html
 
 ## Reflection
 
-## Reflection
-
 This project taught me how much you can accomplish with Vanilla JavaScript when you structure the DOM, state, and events carefully. I began by planning the page as three parts: the HTML table for habits and days, a compact CSS theme with clear focus styles, and a single `app.js` to handle state and persistence. The most valuable lesson was modeling data simply: each habit stores an array of ISO dates it was completed. Using `YYYY-MM-DD` strings avoided timezone confusion and made streak logic straightforward.
 
 My main challenge was computing a live “current streak” and keeping the seven-day window aligned with the user’s local midnight. I solved this in two steps: a small `toISODate()` helper that always formats dates consistently, and a midnight timer that recalculates the rolling week so “Today” automatically advances without a reload. This improved correctness and made the app feel alive.
