@@ -3,7 +3,7 @@
 Add habits, tick your day, and keep your streaks going. Built with **Vanilla JS (no frameworks)**. Data persists in **localStorage**.
 
 ## Live Demo
-- **Pages**: https://Ferlandyy.github.io/habit-tracker/  
+- **Pages**: https://habit-tracker-3y2b.onrender.com 
 - **Repository**: https://github.com/Ferlandyy/habit-tracker
 
 ---
