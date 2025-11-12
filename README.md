@@ -44,3 +44,27 @@ Add habits, tick your day, and keep your streaks going. Built with **Vanilla JS 
 git clone https://github.com/Ferlandyy/habit-tracker.git
 cd habit-tracker
 start index.html
+```
+
+## Self-Assessment 
+
+| Criterion | Evidence |
+|---|---|
+| MVP works (add / toggle / persist) | Add a habit; toggle Today and previous days; refresh to confirm persistence via `localStorage`. |
+| UX & accessibility | Labels for inputs; all cells are buttons; visible focus rings; keyboard operable (Tab/Enter/Space); responsive table with horizontal scroll on small screens; sufficient color contrast. |
+| Public deployment | Live site published on GitHub Pages at: https://ferlandyy.github.io/habit-tracker/ |
+| Code quality | Clear separation of concerns across HTML/CSS/JS; helper functions for dates; no framework; concise naming; no dead code. |
+| Reflection (200–300 words) | Included below in “Reflection”. |
+
+## Reflection
+
+## Reflection
+
+This project taught me how much you can accomplish with Vanilla JavaScript when you structure the DOM, state, and events carefully. I began by planning the page as three parts: the HTML table for habits and days, a compact CSS theme with clear focus styles, and a single `app.js` to handle state and persistence. The most valuable lesson was modeling data simply: each habit stores an array of ISO dates it was completed. Using `YYYY-MM-DD` strings avoided timezone confusion and made streak logic straightforward.
+
+My main challenge was computing a live “current streak” and keeping the seven-day window aligned with the user’s local midnight. I solved this in two steps: a small `toISODate()` helper that always formats dates consistently, and a midnight timer that recalculates the rolling week so “Today” automatically advances without a reload. This improved correctness and made the app feel alive.
+
+Accessibility was another focus. Turning day cells into real buttons (with `aria-pressed`) gave keyboard users a predictable experience, and visible focus rings plus good color contrast made interactions clear. I also learned to lean on the browser’s storage for a stateless deployment: persistence via `localStorage` kept the code simple and ideal for GitHub Pages.
+
+If I iterate further, I’d add export/import JSON, drag-to-reorder habits, and a light/dark theme toggle. Overall, this was a concise but realistic exercise in DOM work, date handling, and shipping a small, accessible app.
+
